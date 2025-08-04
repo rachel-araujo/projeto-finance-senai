@@ -1,0 +1,40 @@
+{
+  "transacoes": [
+    {
+      "id": 1,
+      "tipo": "saida",
+      "valor": 80,
+      "categoria": "alimentacao",
+      "data": "2025-08-01"
+    },
+    {
+      "id": 2,
+      "tipo": "entrada",
+      "valor": 1500,
+      "categoria": "salario",
+      "data": "2025-08-01"
+    }
+  ],
+  "metas": [
+    {
+      "id": 1,
+      "categoria": "alimentacao",
+      "valorLimite": 500,
+      "mes": "2025-08"
+    },
+    {
+      "id": 2,
+      "categoria": "lazer",
+      "valorLimite": 300,
+      "mes": "2025-08"
+    }
+  ],
+  "categorias": [
+    { "id": 1, "nome": "alimentacao" },
+    { "id": 2, "nome": "transporte" },
+    { "id": 3, "nome": "lazer" },
+    { "id": 4, "nome": "salario" },
+    { "id": 5, "nome": "outros" }
+  ]
+}
+
