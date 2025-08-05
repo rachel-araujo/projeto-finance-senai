@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { View, TextInput, Button, Picker, Text, StyleSheet } from 'react-native';
-import api from '../services/api';
+import { View, TextInput, Button, Text, StyleSheet } from 'react-native';
+import { Picker } from '@react-native-picker/picker';
+import api from '../../services/api';
 
 export default function NovaTransacaoComponent({ navigation }) {
   const [valor, setValor] = useState('');

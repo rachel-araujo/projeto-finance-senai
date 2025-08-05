@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, TextInput, Button, Picker, FlatList, StyleSheet } from 'react-native';
-import api from '../services/api';
+import { View, Text, TextInput, Button, FlatList, StyleSheet } from 'react-native';
+import { Picker } from '@react-native-picker/picker';
+import api from '../../services/api';
 
-export default function MetasComponent() {
+export default function MetasComponent( {navigation }) {
   const [metas, setMetas] = useState([]);
   const [valorLimite, setValorLimite] = useState('');
   const [categoria, setCategoria] = useState('');

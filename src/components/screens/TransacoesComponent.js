@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, FlatList, StyleSheet } from 'react-native';
-import api from '../services/api';
-import { formatCurrency } from '../utils/formatCurrency';
-import { formatDate } from '../utils/dateHelpers';
+import api from '../../services/api';
+import { formatCurrency } from '../../utils/format';
+import { formatDate } from '../../utils/dateHelpers';
 
 export default function TransacoesComponent() {
   const [transacoes, setTransacoes] = useState([]);

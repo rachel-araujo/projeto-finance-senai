@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-import api from '../services/api';
-import { formatCurrency } from '../utils/formatCurrency';
+import { View, Text, StyleSheet, Button } from 'react-native';
+import api from '../../services/api';
+import { formatCurrency } from '../../utils/format';
 
-export default function DashboardComponent() {
+export default function DashboardComponent({ navigation }) {
   const [transacoes, setTransacoes] = useState([]);
   const [metas, setMetas] = useState([]);
 
@@ -33,6 +33,9 @@ export default function DashboardComponent() {
       <Text>Entradas: {formatCurrency(entradas)}</Text>
       <Text>Saídas: {formatCurrency(saidas)}</Text>
       <Text>Saldo: {formatCurrency(saldo)}</Text>
+      <Button title="Ver Transações" onPress={() => navigation.navigate('Transações')} />
+      <Button title="Nova Transação" onPress={() => navigation.navigate('Nova Transação')} />
+      <Button title="Metas" onPress={() => navigation.navigate('Metas')} />
     </View>
   );
 }

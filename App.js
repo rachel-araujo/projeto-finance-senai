@@ -1,10 +1,11 @@
-import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import DashboardComponent from './src/screens/DashboardScreen';
-import TransacoesComponent from './src/screens/TransacoesScreen';
-import NovaTransacaoComponent from './src/screens/NovaTransacaoScreen';
+import TransacoesComponent from './src/components/screens/TransacoesComponent';
 import MetasComponent from './src/components/screens/MetasComponent';
+
+import DashboardComponent from './src/components/screens/DashboardComponent';
+import NovaTransacaoComponent from './src/components/screens/NovaTransacaoComponent';
+
 
 const Stack = createNativeStackNavigator();
 

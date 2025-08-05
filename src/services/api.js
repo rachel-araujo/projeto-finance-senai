@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:3001', // use IP da máquina se testar no celular físico
+  baseURL: 'http://192.168.12.115:3000', 
 });
 
 export default api;
