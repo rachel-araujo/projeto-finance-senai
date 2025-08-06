@@ -6,7 +6,7 @@ import { formatCurrency } from '../../utils/format';
 export default function DashboardComponent({ navigation }) {
   const [transacoes, setTransacoes] = useState([]);
   const [metas, setMetas] = useState([]);
-
+  
   useEffect(() => {
     async function fetchData() {
       const resTransacoes = await api.get('/transacoes');
@@ -42,5 +42,5 @@ export default function DashboardComponent({ navigation }) {
 
 const styles = StyleSheet.create({
   container: { flex: 1, padding: 24 },
-  title: { fontSize: 20, fontWeight: 'bold', marginBottom: 12 }
+  title: { fontSize: 20, fontWeight: 'bold', marginBottom: 12 },
 });
